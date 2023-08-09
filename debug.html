@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>tt:debug</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .box {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+        .item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        .item-text {
+            font-weight: bold;
+        }
+        .remove-button {
+            border: none;
+            background: none;
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .remove-button:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Debugging</h1>
+
+    <div class="section">
+        <label for="activateCheckbox">Activate:</label>
+        <input type="checkbox" id="activateCheckbox" />
+    </div>
+
+    <div class="section">
+        <div class="box">
+            <h2 class="section-title">Excluded:</h2>
+            <div id="excludeList"></div>
+        </div>
+        
+        <p>Item example: "sub.domain.top"</p>
+        <input type="text" id="excludeInput" placeholder="Enter URL" />
+        <button id="addExcludeButton">Add</button>
+    </div>
+
+    <script src="debug.js"></script>
+</body>
+</html>
