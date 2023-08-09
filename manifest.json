@@ -6,8 +6,7 @@
   "description": "twisted text manipulation!",
   "permissions": [
     "activeTab",
-    "tabs",
-    "storage"
+    "tabs"
   ],
   "content_scripts": [
     {
@@ -15,8 +14,5 @@
       "js": ["content.js"],
       "run_at": "document_end"
     }
-  ],
-  "action": {
-    "default_popup": "debug.html"
-  }
+  ]
 }
