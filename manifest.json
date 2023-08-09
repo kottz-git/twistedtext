@@ -16,10 +16,7 @@
       "run_at": "document_end"
     }
   ],
-  "background": {
-    "service_worker": "service_worker.js"
-  },
   "action": {
-    "default_title": "Click Me"
+    "default_popup": "debug.html"
   }
 }
