@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+
+  "name": "twistedtext!",
+  "version": "6.666.6",
+  "description": "twisted text manipulation!",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "action": {
+    "default_title": "Click Me"
+  }
+}
